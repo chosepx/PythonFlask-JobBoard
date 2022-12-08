@@ -15,7 +15,7 @@
     <div class="box">
       <article class="media">
         <div class="media-left">
-          {% for _ in range(0, review['rating']): %}
+          {% for _ in range(1, review['rating']): %}
             <span class="fa fa_star checked"></span>
           {% endfor %}
         </div>
@@ -34,7 +34,7 @@
     {% endfor %}
   <div class="columns">
     <div class="column">
-      <a href="{{ url_for('review', employer_id=employer['id']) }}" class="button is-info is-pulled-right">Create Review</a>
+      <<a href="" class="button is-info is-pulled-right">Create Review</a>
     </div>
   </div>
 {% endblock %}
